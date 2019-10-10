@@ -2,8 +2,8 @@ FROM debian:jessie
 MAINTAINER Vivek Lanjekar vivek.lanjekar@gmail.com
 
 ARG GRAFANA_ARCHITECTURE=amd64
-ARG GRAFANA_VERSION=latest
-ARG GRAFANA_DEB_URL=https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_${GRAFANA_VERSION}_${GRAFANA_ARCHITECTURE}.deb
+ARG GRAFANA_VERSION=6.4.2
+ARG GRAFANA_DEB_URL=https://dl.grafana.com/oss/release/grafana-${GRAFANA_VERSION}_${GRAFANA_ARCHITECTURE}.deb
 ARG GOSU_BIN_URL=https://github.com/tianon/gosu/releases/download/1.10/gosu-${GRAFANA_ARCHITECTURE}
 
 ### GRAFANA_VERSION=latest = nightly build
