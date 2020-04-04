@@ -32,8 +32,8 @@ RUN \
   chmod +x /usr/sbin/gosu && \
   for plugin in $(curl -s https://grafana.net/api/plugins?orderBy=name | jq '.items[] | select(.internal == false) | .slug' | tr -d '"'); do grafana-cli --pluginsDir "${GF_PLUGIN_DIR}" plugins install $plugin; done && \
   ### branding && \
-  sed -i 's#<title>Grafana</title>#<title>GRAB Grafana</title>#g' /usr/share/grafana/public/views/index-template.html && \
-  sed -i 's#<title>Grafana - Error</title>#<title>GRAB Grafana - Error</title>#g' /usr/share/grafana/public/views/error-template.html && \
+  sed -i 's#<title>Grafana</title>#<title>GRAB - Grafana</title>#g' /usr/share/grafana/public/views/index-template.html && \
+  sed -i 's#<title>Grafana - Error</title>#<title>GRAB - Grafana - Error</title>#g' /usr/share/grafana/public/views/error-template.html && \
   chmod +x /run.sh && \
   mkdir -p /usr/share/grafana/.aws/ && \
   touch /usr/share/grafana/.aws/credentials && \
