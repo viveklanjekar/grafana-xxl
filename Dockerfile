@@ -15,7 +15,7 @@ ENV \
   GF_PLUGIN_DIR=/grafana-plugins \
   GF_PATHS_LOGS=/var/log/grafana \
   GF_PATHS_DATA=/var/lib/grafana \
-  UPGRADEALL=true
+  UPGRADEALL=false
 
 COPY ./run.sh /run.sh
 
