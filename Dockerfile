@@ -1,5 +1,5 @@
 FROM debian:stretch
-MAINTAINER Vivek Lanjekar vivek.lanjekar@gmail.com
+LABEL Vivek Lanjekar vivek.lanjekar@gmail.com
 
 ARG GRAFANA_ARCHITECTURE=amd64
 ARG GRAFANA_VERSION=7.1.3
