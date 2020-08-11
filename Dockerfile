@@ -44,8 +44,8 @@ RUN \
 
 ### branding
 RUN \
-  sed -i 's/<title>\[\[\.AppTitle\]\]<\/title>/<title>Grafana XXL<\/title>/g' /usr/share/grafana/public/views/index-template.html && \
-  sed -i 's/<title>Grafana - Error<\/title>/<title>Grafana XXL - Error<\/title>/g' /usr/share/grafana/public/views/error-template.html
+  sed -i 's/<title>\[\[\.AppTitle\]\]<\/title>/<title>Grab Grafana<\/title>/g' /usr/share/grafana/public/views/index-template.html && \
+  sed -i 's/<title>Grafana - Error<\/title>/<title>Grab Grafana - Error<\/title>/g' /usr/share/grafana/public/views/error-template.html
 
 VOLUME ["/var/lib/grafana", "/var/log/grafana", "/etc/grafana"]
 
