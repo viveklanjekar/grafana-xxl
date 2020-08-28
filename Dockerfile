@@ -33,6 +33,7 @@ RUN \
   curl -L ${GOSU_BIN_URL} > /usr/sbin/gosu && \
   chmod +x /usr/sbin/gosu && \
   git clone https://github.com/AutohomeCorp/graph-compare-panel.git ${GF_PLUGIN_DIR}/graph-compare-panel && \
+  grafana-cli --pluginsDir "${GF_PLUGIN_DIR}" plugins install grafana-azure-data-explorer-datasource && \
 ## Disable plugin instalation
 #  for plugin in $(curl -s https://grafana.net/api/plugins?orderBy=name | jq '.items[] | select(.internal == false) | .slug' | tr -d '"'); do grafana-cli --pluginsDir "${GF_PLUGIN_DIR}" plugins install $plugin; done && \
   chmod +x /run.sh && \
