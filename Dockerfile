@@ -4,7 +4,7 @@ LABEL Vivek Lanjekar vivek.lanjekar@gmail.com
 
 
 ARG GRAFANA_ARCHITECTURE=amd64
-ARG GRAFANA_VERSION=7.1.5
+ARG GRAFANA_VERSION=7.2.0
 ARG GRAFANA_DEB_URL=https://dl.grafana.com/oss/release/grafana_${GRAFANA_VERSION}_${GRAFANA_ARCHITECTURE}.deb
 ARG GOSU_BIN_URL=https://github.com/tianon/gosu/releases/download/1.10/gosu-${GRAFANA_ARCHITECTURE}
 
